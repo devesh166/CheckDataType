@@ -10,4 +10,5 @@ String
 Object
 Boolean
 null
+Undefined
 NaN
