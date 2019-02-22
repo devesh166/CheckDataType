@@ -1,7 +1,23 @@
 function checktype(x){
+    
+    if(x == null && typeof x == "object"){
+        return "This is null"
+    }
+    else if(isNaN(x)&& typeof x == "number"){
+        return "This is NaN";
+    }
+    else if(!x){
+      
+        return "This is Undefined";
+   
+   }
+    
+  
 if(x.constructor ==Array){
     if(x[1].constructor== Object){
         console.log("This is an array of object :")  
+    }else if(x[1].constructor== String){
+        console.log("This is an array of String :")  
     }else{
         console.log("This is an array  :");
     }
@@ -21,15 +37,10 @@ else if(x.constructor ==Function){
 else if(x.constructor ==Boolean){
     console.log("This is a Boolean :");
 }
-else if(x == null){
-    console.log("This is null");
 
-}
-else if(isNaN(x)){
-    console.log("This is NaN");
-}
+
 else{
-    console.log("This is Undefined");
+    console.log("identifier cannot be resolved");
 }
 
 
@@ -38,4 +49,4 @@ return x;
 
 }
 
-checktype([{a:1},{a:1},{a:1}])
+checktype( )
