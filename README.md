@@ -11,4 +11,3 @@ Object
 Boolean
 null
 NaN
-undefined
